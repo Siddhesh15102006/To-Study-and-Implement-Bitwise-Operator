@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int a = 5; // 101 in binary
+    int b = 2; // 010 in binary
+
+    int bitwise_and = a & b;
+    int bitwise_or = a | b;
+    int bitwise_xor = a ^ b;
+    int bitwise_not = ~a; 
+    int right_shift = a >> 1;
+    int left_shift = b << 2;
+
+    cout << "AND:" << bitwise_and << endl;
+    cout << "OR:" << bitwise_or << endl;
+    cout << "XOR:" << bitwise_xor << endl;
+    cout << "NOT:" << bitwise_not << endl;
+    cout << "LEFT SHIFT:" << left_shift << endl;
+    cout << "RIGHT SHIFT:" << right_shift << endl;
+
+    return 0;
+}
+
+/*Output :-
+AND:0
+OR:7
+XOR:7
+NOT:-6
+LEFT SHIFT:8
+RIGHT SHIFT:2
+
+
+=== Code Execution Successful ===
+*/
