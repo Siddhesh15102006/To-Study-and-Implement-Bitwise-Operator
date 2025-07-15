@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int a=50;
+    
+    int bit_to_be_set;
+    int bit_to_be_reset;
+    int set;
+    int reset;
+
+    cout << "enter the bit to be set:"<<endl;
+    cin >> bit_to_be_set;
+    cout << "enter the bit to be reset:"<<endl;
+    cin >> bit_to_be_reset;
+    reset=a&(~(2<<bit_to_be_reset));
+    cout << "Give No.:";
+    
+    return 0;
+}
+
+/*Output :-
+enter the bit to be set:
+10
+enter the bit to be reset:
+20
+Give No.:
+
+=== Code Execution Successful ===
