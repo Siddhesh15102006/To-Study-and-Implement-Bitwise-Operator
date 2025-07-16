@@ -19,8 +19,18 @@ int main() {
                 cout<<"The Number Is Zero"<<endl;
             }
         }
+
+
+/*Output :-
 Enter a number to check (+) (-):5
 The Number Is Positive
 
+=== Code Execution Successful ===
+*/
+
+
+/*Output :-
+Enter a number to check (+) (-):-5
+The Number Is Negative
 
 === Code Execution Successful ===
