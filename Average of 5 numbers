@@ -1,0 +1,35 @@
+//Average of 5 numbers
+#include <iostream>
+using namespace std;
+int main() {
+    float num1, num2, num3, num4, num5;
+    float average;
+
+    cout << "Enter five numbers:" << std::endl;
+
+    cin >> num1;
+    cin >> num2;
+    cin >> num3;
+    cin >> num4;
+    cin >> num5;
+
+    average = (num1 + num2 + num3 + num4 + num5) / 5.0;
+
+    cout << "The average of the five numbers is: " << average << endl;
+    if (average > 50) {
+    cout << "The average is greater than 50." << endl;
+    } else {
+    cout << "The average is not greater than 50." << endl;
+    }
+    return 0;
+}
+
+/* Output
+Enter five numbers:
+10 20 30 40 50
+The average of the five numbers is: 30
+The average is not greater than 50.
+
+
+=== Code Execution Successful ===
+*/
