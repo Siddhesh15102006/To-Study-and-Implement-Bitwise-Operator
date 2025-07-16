@@ -1,0 +1,16 @@
+// Exp:- 2 Data Types In C++
+#include <iostream>
+#include<string>
+using namespace std;
+int main() {
+    int a;
+    cout<<"Enter any Integer:";
+    cin>>a;
+    cout<<"Integer = "<<a<<" and size is "<<sizeof(a)<<"bytes"<<endl;
+   
+    float b;
+    cout<<"Enter Any Number With Decimal:";
+    cin>>b;
+    cout<<"float="<<b<<"and size is "<<sizeof(b)<<"bytes"<<endl;
+    return 0;
+}
