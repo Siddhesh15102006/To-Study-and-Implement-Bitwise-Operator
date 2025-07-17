@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+
+    char c;
+    cout << "Enter a character: ";
+    cin >> c;
+
+    if ( c=='a' || c=='e' || c=='i' || c=='o' || c=='u' || c=='A' || c=='E' || c=='I' || c=='O' || c=='U' ) 
+    {
+        cout << c << " character is a vowel." << endl;
+    } 
+    else 
+    {
+        cout << c << " character is a consonant." << endl;
+    }
+    return 0;
+}
+/* Ouput :-
+Enter a character: a
+a character is a vowel.
+
+=== Code Execution Successful ===
+
+Enter a character: b
+b character is a consonant.
+
+=== Code Execution Successful ===
