@@ -1,0 +1,41 @@
+// TIME TABLE OF SUBJECTS FOR SCHOOL.
+#include <iostream>
+using namespace std;
+int main() 
+{
+    intchoice;
+    cout<<"1. MONDAY"<<endl<<"2. TUESDAY"<<endl<<"3. WEDNESDAY"<<endl<<"4. THURSDAY"<<endl<<"5. FRIDAY"<<endl<<"6. SATURDAY"<<endl<<"7. SUNDAY"<<endl;
+    
+    cout << "Enter Day";
+    cin>>choice;
+    
+    switch (choice)
+    {
+    case1:
+    cout<<"MATHS"
+    break;
+    case2:
+    cout<<"SCIENCE"
+    break;
+    case3:
+    cout<<"ENGLISH"
+    break;
+    case4:
+    cout<<"HINDI"
+    break;
+    case5:
+    cout<<"HISTORY"
+    break;
+    case6:
+    cout<<"GEOGRAPHY"
+    break;
+    case7:
+    cout<<"GAMES"
+    break;
+}
+return 0;
+}   
+    
+    
+    
+    
