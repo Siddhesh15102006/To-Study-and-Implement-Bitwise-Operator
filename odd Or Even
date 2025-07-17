@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+  int number;
+    cout << "Enter A Number";
+    cin >> number;
+
+     if (number % 2 == 0) 
+    {
+      cout << number << " The Number is Even :- " <<endl;
+    } 
+
+    else 
+    {
+      cout << number << " The Number is Odd :- " <<endl;
+    }
+    return 0;
+}
+
+/* Output :-
+Enter A Number2
+2 The Number is Even :- 
+
+=== Code Execution Successful ===
