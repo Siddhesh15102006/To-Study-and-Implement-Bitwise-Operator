@@ -1,0 +1,88 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    char str1[4] = "C++";
+    char str2[] = {'C','+','+','\0'};
+    char str3[4] = {'C','+','+','\0'};
+    string str4 =  "C++";
+    
+cout << str1<<endl;
+    cout << str2<<endl;
+    cout << str3<<endl;
+    cout << str4<<endl;
+
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+ 
+ string strA;
+ cout<<"Enter the string A :- ";
+ cin>>strA;
+ 
+ string strB;
+ cout<<"Enter the string B ;- ";
+ cin>>strB;
+ 
+ string strC = strA + strB;
+ int n = strC.length();
+ cout<<"Length of your string;"<<n;
+ 
+ return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    string str1;
+    
+    int i;
+    
+    cout<<"Enter The String :- ";
+    cin>>str1;
+    
+    for(i=str1.length(); i>=0; i--)
+    {
+        cout<<str1[i];
+    }
+    
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    string str1, reversedStr;
+    
+    cout << "Enter a word: ";
+    cin >> str1;
+
+    reversedStr = string(str1.rbegin(), str1.rend());
+
+    if (str1 == reversedStr) 
+    {
+        cout << "It is a Palindrome.";
+    } 
+    else 
+    {
+        cout << "It is not a Palindrome.";
+    }
+
+    return 0;
+}
