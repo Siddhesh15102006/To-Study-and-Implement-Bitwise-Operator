@@ -1,0 +1,92 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int a = 10;
+    int *aptr;
+    aptr = &a;
+    
+    cout <<a<<endl;
+    cout<<aptr<<endl;
+    cout<<*aptr<<endl;
+    cout<<&a<<endl;
+    return 0;
+}
+
+Output :-
+10
+0x7ffff4943974
+10
+0x7ffff4943974
+
+
+=== Code Execution Successful ===
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int a = 50;
+    int *aptr;
+    aptr=&a;
+    cout<<"address befor incrementing int:"<<&a<<endl;
+    aptr++;
+    cout<<"address after incrementing int:"<<aptr<<endl;
+    
+    float f=4.5;
+    float *fptr;
+    fptr = &f;
+    cout<<"address befor incrementing float:"<<&f<<endl;
+    fptr++;
+    cout<<"address after incrementing float:"<<fptr<<endl;
+    
+    double d=5.436375;
+    double *dptr;
+    dptr=&d;
+    cout<<"address before incrementing double:"<<&d<<endl;
+    dptr++;
+    cout<<"address after incrementing double:"<<dptr<<endl;
+    
+    bool b=false;
+    bool *bptr;
+    bptr=&b;
+    cout<<"address before incrementing bool:"<<&b<<endl;
+    bptr++;
+    cout<<"addresss after incrementing double:"<<bptr<<endl;
+    
+    return 0;
+}
+Output :-
+Address befor incrementing int:0x7ffdc278b58c
+Address after incrementing int:0x7ffdc278b590
+Address befor incrementing float:0x7ffdc278b588
+Address after incrementing float:0x7ffdc278b58c
+Address before incrementing double:0x7ffdc278b580
+Address after incrementing double:0x7ffdc278b588
+Address before incrementing bool:0x7ffdc278b57f
+Addresss after incrementing double:0x7ffdc278b580
+
+
+=== Code Execution Successful ===
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int arr[] = {100,90,80,70,60,50,40,30,20,10,00};
+    int*p=&arr[10];
+    for(int i=0; i<11; i++)
+    {
+    cout <<*p<<" ";
+    p--;
+    }
+    return 0;
+}
+
+Output :-
+0 10 20 30 40 50 60 70 80 90 100 
+=== Code Execution Successful ===
