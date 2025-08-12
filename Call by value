@@ -16,3 +16,71 @@ int main ()
     swap (a,b);
     cout<<a<<b;
 }
+
+
+// Call by pointer
+#include <iostream>
+using namespace std;
+
+void swap (int *x , int *y) 
+{
+    int temp;
+    temp = *x;
+    *x = *y;
+    *y = temp;
+    return ;
+}
+int main ()
+{
+    int A=10 , B=20;
+    cout<<"Numbers Befor Swapping"<<endl;
+    cout<<"A = "<<A<<endl<<"B = "<<B<<endl;
+    swap(&A,&B);
+    cout<<"Numbers After Swapping"<<endl;
+    cout<<"A = "<<A<<endl<<"B = "<<B<<endl;
+    
+}
+Output
+Numbers Befor Swapping
+A = 10
+B = 20
+Numbers After Swapping
+A = 20
+B = 10
+
+
+=== Code Execution Successful ===
+
+// Call by refrence
+#include <iostream>
+using namespace std;
+
+void swap (int &x , int &y) 
+{
+    int temp;
+    temp = x;
+    x = y;
+    y = temp;
+    return ;
+}
+int main ()
+{
+    int A=10 , B=20;
+    cout<<"Numbers Befor Swapping"<<endl;
+    cout<<"A = "<<A<<endl<<"B = "<<B<<endl;
+    swap(A,B);
+    cout<<"Numbers After Swapping"<<endl;
+    cout<<"A = "<<A<<endl<<"B = "<<B<<endl;
+    
+}
+Output
+Numbers Befor Swapping
+A = 10
+B = 20
+Numbers After Swapping
+A = 20
+B = 10
+
+
+=== Code Execution Successful ===
+
