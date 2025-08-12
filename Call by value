@@ -8,11 +8,11 @@ void swap (int x , int y)
     temp = x;
     x = y;
     y = temp;
-    return 0;
+    return ;
 }
 int main ()
 {
     int a=5 , b=10;
     swap (a,b);
-    cout>>a>>b
+    cout<<a<<b;
 }
